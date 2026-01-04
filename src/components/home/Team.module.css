@@ -32,6 +32,7 @@
     border-radius: 50%;
     background: #333;
     margin: 0 auto 20px;
+    /* Centering the container */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +47,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    /* Ensuring face is centered */
+    display: block;
 }
 
 .name {
