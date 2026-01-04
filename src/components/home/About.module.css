@@ -82,8 +82,10 @@
 
 @media (max-width: 900px) {
     .row {
-        flex-direction: column-reverse;
-        /* Text on top usually better, or Image on top? Let's do Text on top by reversing logic or just column */
         flex-direction: column;
+    }
+
+    .imageContainer {
+        margin-top: 40px;
     }
 }

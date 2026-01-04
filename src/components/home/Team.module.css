@@ -6,7 +6,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 50px;
 }
@@ -38,6 +38,14 @@
     font-size: 2rem;
     color: white;
     border: 2px solid var(--primary-red);
+    overflow: hidden;
+    position: relative;
+}
+
+.memberImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .name {
