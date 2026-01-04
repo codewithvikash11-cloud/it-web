@@ -13,7 +13,14 @@ export default function Header() {
       <div className="container">
         <nav className={styles.nav}>
           <Link href="/" className={styles.logo}>
-            <Image src="/logo.png" alt="Rovio Tech" width={180} height={50} priority />
+            <Image
+              src="/logo.png"
+              alt="Rovio Tech"
+              width={180}
+              height={50}
+              priority
+              style={{ width: 'auto', height: '40px' }}
+            />
           </Link>
 
           <button
