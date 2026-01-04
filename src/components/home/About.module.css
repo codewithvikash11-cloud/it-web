@@ -1,0 +1,89 @@
+.about {
+    background: var(--bg-black);
+    position: relative;
+    padding: 100px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.text {
+    flex: 1;
+}
+
+.imageContainer {
+    flex: 1;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Abstract design in image placeholder */
+.image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: var(--primary-red);
+    filter: blur(80px);
+    opacity: 0.5;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.highlightItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.check {
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 42, 42, 0.2);
+    color: var(--primary-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.highlightText {
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column-reverse;
+        /* Text on top usually better, or Image on top? Let's do Text on top by reversing logic or just column */
+        flex-direction: column;
+    }
+}
