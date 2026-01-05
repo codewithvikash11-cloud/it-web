@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -8,7 +9,13 @@ export default function Footer() {
                 <div className={styles.grid}>
                     <div className={styles.col}>
                         <Link href="/" className={styles.logo}>
-                            Rovio <span>Tech</span>
+                            <Image
+                                src="/images/logo-horizontal.png"
+                                alt="Rovio Tech"
+                                width={150}
+                                height={40}
+                                style={{ width: 'auto', height: '35px' }}
+                            />
                         </Link>
                         <p className={styles.desc}>
                             Next-generation IT company delivering innovative, scalable, and AI-powered digital solutions.

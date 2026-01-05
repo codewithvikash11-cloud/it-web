@@ -1,12 +1,13 @@
+import Image from 'next/image';
 import styles from './Portfolio.module.css';
 
 const projects = [
-    { title: "E-Shop Pro", category: "Shopify Development", color: "#e74c3c" },
-    { title: "TechCorp", category: "WordPress Site", color: "#3498db" },
-    { title: "Finance App", category: "App Development", color: "#2ecc71" },
-    { title: "Travel Go", category: "UI/UX Design", color: "#f1c40f" },
-    { title: "HealthPlus", category: "Web Development", color: "#9b59b6" },
-    { title: "AutoMotive", category: "Digital Marketing", color: "#e67e22" }
+    { title: "E-Shop Pro", category: "Shopify Development", color: "#e74c3c", image: "/images/project-eshop.png" },
+    { title: "TechCorp", category: "WordPress Site", color: "#3498db", image: "/images/project-techcorp.png" },
+    { title: "Finance App", category: "App Development", color: "#2ecc71", image: "/images/project-finance.png" },
+    { title: "Travel Go", category: "UI/UX Design", color: "#f1c40f", image: "/images/project-travel.png" },
+    { title: "HealthPlus", category: "Web Development", color: "#9b59b6", image: "/images/project-health.png" },
+    { title: "AutoMotive", category: "Digital Marketing", color: "#e67e22", image: "/images/project-auto.png" }
 ];
 
 export default function Portfolio() {
@@ -20,11 +21,14 @@ export default function Portfolio() {
                 <div className={styles.grid}>
                     {projects.map((project, index) => (
                         <div key={index} className={styles.item}>
-                            <div
-                                className={styles.image}
-                                style={{ backgroundColor: project.color }}
-                            /* Placeholder for real image */
-                            />
+                            <div className={styles.imageWrapper}>
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    className={styles.projectImage}
+                                />
+                            </div>
                             <div className={styles.overlay}>
                                 <h3 className={styles.title}>{project.title}</h3>
                                 <span className={styles.category}>{project.category}</span>

@@ -10,17 +10,24 @@ export default function Hero() {
             </div>
 
             <div className={styles.content}>
-                <span className={styles.tagline}>Future of Tech</span>
+                <div className={styles.tagline}>
+                    Future-Ready IT Solutions
+                </div>
                 <h1 className={styles.headline}>
                     Innovating the Future with <br />
                     <span className={styles.highlight}>Smart Digital Solutions</span>
                 </h1>
                 <p className={styles.subheadline}>
-                    We build high-performance WordPress websites, Shopify stores, scalable web and mobile applications, and result-driven digital marketing solutions.
+                    We deliver high-performance websites, scalable applications, and result-driven digital marketing solutions to help businesses grow.
                 </p>
+
                 <div className={styles.buttons}>
-                    <Link href="#contact" className="btn btn-primary">Get a Free Quote</Link>
-                    <Link href="#contact" className="btn btn-outline">Contact Us</Link>
+                    <Link href="#contact" className={`${styles.btn} ${styles.btnPrimary}`}>
+                        Get Free Quote
+                    </Link>
+                    <Link href="#contact" className={`${styles.btn} ${styles.btnOutline}`}>
+                        Contact Us
+                    </Link>
                 </div>
             </div>
         </section>

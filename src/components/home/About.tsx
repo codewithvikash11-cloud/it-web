@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './About.module.css';
 
 export default function About() {
@@ -7,10 +9,12 @@ export default function About() {
                 <div className={styles.row}>
                     <div className={styles.imageContainer}>
                         <div className={styles.image}>
-                            {/* Placeholder for AI/Tech image */}
-                            <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#555', fontSize: '2rem', fontWeight: 'bold' }}>
-                                ROVIO TECH
-                            </div>
+                            <Image
+                                src="/images/about-office.png"
+                                alt="Rovio Tech Office"
+                                fill
+                                style={{ objectFit: 'cover' }}
+                            />
                         </div>
                     </div>
                     <div className={styles.text}>

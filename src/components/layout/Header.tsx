@@ -14,7 +14,7 @@ export default function Header() {
         <nav className={styles.nav}>
           <Link href="/" className={styles.logo}>
             <Image
-              src="/logo.png"
+              src="/images/logo-horizontal.png"
               alt="Rovio Tech"
               width={180}
               height={50}

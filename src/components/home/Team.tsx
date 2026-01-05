@@ -6,11 +6,26 @@ const team = [
         name: "Vikash Khadoliya",
         role: "Founder & Lead Developer",
         bio: "Expert in WordPress, Shopify, and full-stack development.",
-        image: "/Vikash Khadoliya.jpeg"
+        image: "/images/team-vikash.png"
     },
-    { name: "Rahul Sharma", role: "UI/UX Designer", bio: "Specializes in modern, user-focused design." },
-    { name: "Neha Verma", role: "Digital Marketing Specialist", bio: "SEO and paid marketing strategist." },
-    { name: "Aman Singh", role: "Automation & Technology Engineer", bio: "AI tools, automation, and smart systems expert." }
+    {
+        name: "Rahul Sharma",
+        role: "UI/UX Designer",
+        bio: "Specializes in modern, user-focused design.",
+        image: "/images/team-rahul.png"
+    },
+    {
+        name: "Neha Verma",
+        role: "Digital Marketing Specialist",
+        bio: "SEO and paid marketing strategist.",
+        image: "/images/team-neha.png"
+    },
+    {
+        name: "Aman Singh",
+        role: "Automation & Technology Engineer",
+        bio: "AI tools, automation, and smart systems expert.",
+        image: "/images/team-aman.png"
+    }
 ];
 
 export default function Team() {
