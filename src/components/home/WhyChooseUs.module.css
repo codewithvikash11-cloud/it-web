@@ -59,4 +59,14 @@
     .grid {
         grid-template-columns: 1fr;
     }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-bottom: 20px;
+    }
 }

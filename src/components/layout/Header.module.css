@@ -131,6 +131,7 @@
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 900px) {
     .header {
         top: 0;
@@ -139,28 +140,33 @@
         border-radius: 0;
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        background: rgba(10, 10, 10, 0.95);
+        background: rgba(10, 10, 10, 0.98);
+        padding: 0;
     }
 
     .nav {
-        height: 80px;
+        height: 70px;
+        padding: 0 20px;
     }
 
     .menu {
         position: fixed;
-        top: 0;
+        top: 70px;
+        left: 0;
         right: 0;
-        height: 100vh;
+        /* height: calc(100vh - 70px); */
+        height: auto;
+        min-height: calc(100vh - 70px);
         width: 100%;
-        /* Full screen menu */
-        background: rgba(5, 5, 5, 0.98);
+        background: #0f0f0f;
         flex-direction: column;
-        justify-content: center;
-        gap: 30px;
+        justify-content: flex-start;
+        padding-top: 40px;
+        gap: 25px;
         transform: translateX(100%);
-        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        z-index: 1000;
-        padding-bottom: 50px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .menuOpen {
@@ -168,13 +174,18 @@
     }
 
     .link {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1.25rem;
+        font-weight: 600;
+        display: block;
+        padding: 10px 0;
     }
 
     .mobileToggle {
-        display: block;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
     }
 
     .desktopCta {
@@ -183,17 +194,22 @@
 
     .mobileCta {
         display: block;
+        width: 100%;
+        padding: 0 20px;
         margin-top: 20px;
+        text-align: center;
     }
 
     .ctaBlock {
-        font-size: 1.2rem;
-        padding: 15px 40px;
+        display: block;
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
         background: var(--primary-red);
         color: white;
         border-radius: 8px;
         font-weight: 700;
         text-transform: uppercase;
-        display: inline-block;
+        text-align: center;
     }
 }

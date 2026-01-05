@@ -62,8 +62,8 @@
     }
 
     .card {
-        padding: 15px 25px;
-        min-width: 120px;
+        padding: 12px 20px;
+        min-width: 100px;
     }
 
     .name {

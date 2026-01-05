@@ -11,6 +11,13 @@
     margin-top: 50px;
 }
 
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
 .card {
     background: var(--bg-card);
     padding: 30px;

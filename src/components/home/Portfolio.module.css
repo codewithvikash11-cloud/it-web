@@ -9,6 +9,12 @@
     gap: 30px;
 }
 
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .item {
     position: relative;
     height: 250px;

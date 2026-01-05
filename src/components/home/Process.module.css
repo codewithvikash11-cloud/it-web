@@ -79,10 +79,15 @@
         top: 0;
         right: auto;
         background: linear-gradient(180deg, transparent, var(--primary-red), transparent);
+        transform: translateX(-50%);
     }
 
     .step {
         width: 100%;
         max-width: 400px;
+        padding: 20px;
+        background: var(--bg-card);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
     }
 }
